@@ -29,6 +29,11 @@ docker-compose exec cli composer install
 
 4. Visit the new site @ `http://drupal-example.docker.amazee.io`
 
+* It may be necessary to clear the cache after a new Drupal installation
+```
+docker-compose exec cli drush cache-rebuild
+```
+
 * If any steps fail you're safe to rerun from any point,
 starting again from the beginning will just reconfirm the changes.
 
